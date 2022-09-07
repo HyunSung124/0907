@@ -1,0 +1,92 @@
+#문자열 자료형 관련해서 복습
+# print('i\'m learning python')
+
+#제 이름은 임현성 입니다
+# name = "박찬빈"
+# print('제 이름은 %s입니다.' %name)#s를 넣은이유는 문자열이string인데 줄였다.
+
+
+a = "Hello World"
+#1. W출력하기
+#print(a[6]) #a에서 인덱스 번호로 6번째 위치한 값을 출력
+#2. 맨 마지막 글자 출력하기
+#print(a[10])
+#print(a[-1])#맨 마직막 글자를 출력하고싶으면 -를 쓰면 된다
+#Hello 출력하기
+#print(a[0:5])
+#World 출력하기
+#print(a[-5:])
+#전체 문자열을 한칸씩 건너 띄어서 출력하기 HloWrd
+#print(a[::2])
+#문자열 전체를 거꾸로 출력하기
+#print(a[::-1])
+
+# a = "Hello"
+# b = "World"
+# 문자열 + 문자열
+# c = a + ' ' + b
+# print(c)
+#문자열 * 정수
+#print(a * 3)
+#a의 길이 출력
+#print(len(a))
+
+
+a = "Hello Python"
+# b = "cap"
+# print(b.capitalize())
+# print(a.count('o'))
+# print(a.endswith("ho",0,11))
+# print(a.startswith("Hel",1,11))
+# print(a.find("o",6))
+# print(a.index('o',6,8))
+# print(a.isalpha())
+# print(a.isdigit())
+# b = '1234a345'
+# for i in b:
+#     if i.isdigit():
+#         print(i)
+# print(a.isalnum())
+# b = 'a1b2$4'
+# for i in b:
+#     if i.isalnum():
+#         print(i,True)
+
+# c="2soidngsdngjdn#423$%#Qjksknfkjs"
+# answer = ''
+# for i in c:
+#     if i.isalnum() or i in ['-','_','.']:
+#         answer += i
+#     print(answer)
+
+
+#print(a.isupper())
+# for i in a:
+#     if i.isupper():
+#         print(i)
+
+# print(a.islower())
+# for i in a:
+#     if i.islower():
+#         print(i)
+
+# print('/'.join(a))
+# b = ['a','b','c','d']
+# c = ''.join(b)
+# print(c,type(a))
+
+# s = '///str/ip///'
+# print(s.lstrip('/'))
+# print(s.strip('/'))
+# print(s.rstrip('/'))
+# print(s.replace('/',''))
+
+# % - formatting
+#문자열 -%s,정수 - %d,실수 - %f
+ff = 36.5
+print("사람의 체온은 %.1f가 기준이다." %ff)
+dd = 26
+#format-메서드
+print("사람의 체온은 {}가 기준이다. 오늘 기온도 {}도 이다".format(ff,dd))
+#f - string
+print(f"사람의 체온은 {ff}가 기준이다.")
